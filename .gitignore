@@ -2,9 +2,10 @@
 /*.jpg
 /images/*.jpg
 /*.pdf
-/*.json
 /testmodule.js
 /testpromise.js
 /usetestmodule.js
 /requestPrivateFile/*.json
 /tesseracttest.js
+/cookie.json
+/*.txt
