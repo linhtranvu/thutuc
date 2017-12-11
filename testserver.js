@@ -1,1 +1,1 @@
-log("dem chong den");
+console.log("dem chong den");
