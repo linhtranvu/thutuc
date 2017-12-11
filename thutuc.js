@@ -469,7 +469,7 @@ async function syncThutuc(){
 
 // syncLog();
 
-syncThutuc(); 
+syncThutuc();  
 
 (function(){
 
