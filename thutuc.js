@@ -588,7 +588,7 @@ async function compareMultipleData(){
 
 //----------- RUN PRODUCTION ---------------//
   setInterval(syncThutuc, 350000);
-  setInterval(syncLog, 300000); //300000 = 5p 
+  setInterval(syncLog, 300000); //300000 = 5p
 
   setInterval(compareMultipleData, 60000); // 40s/lan
 
