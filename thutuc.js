@@ -400,6 +400,15 @@ function myTrim(x) {
   return x.replace(/^\s+|\s+$/gm,'');
 }
 
+
+
+function myLength(x) {
+  if(x === null){
+    return 0;
+  }
+  return x.length;
+}
+
 function converDate(dateString){
 
   var parts = dateString.split(' ');
@@ -416,7 +425,7 @@ function syncLog(){
 		
 		loginOptions,		
 		requestOptions:{
-			uri: 'http://csdl.thutuchanhchinh.vn/TTHC_UserControls/AuditLog/pList.aspx?&Page=1&RowPerPage=100',
+			uri: 'http://csdl.thutuchanhchinh.vn/TTHC_UserControls/AuditLog/pList.aspx?&Page=1&RowPerPage=200',
 			
 			existDOM: '#gridCoQuanBanHanhItem > table > tbody > tr:nth-child(2) > td:nth-child(2)',
 			// If useCookieOnly is TRUE, no Login request will be sent if cannot get Cookie or Cookie expried. 
@@ -465,7 +474,7 @@ function syncLog(){
 
             // log(results);
             
-            if(results.length > 0){
+            if(myLength(results) > 0){
               
               // Log synced, do thing!
       
@@ -586,7 +595,7 @@ async function compareMultipleData(){
 
 // compareMultipleData();
 
-//----------- RUN PRODUCTION ---------------//
+// ----------- RUN PRODUCTION ---------------//
   setInterval(syncThutuc, 350000);
   setInterval(syncLog, 300000); //300000 = 5p 
 
